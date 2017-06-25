@@ -81,6 +81,7 @@
 
 
                </div>
+               <h1 id="hom">WELCOME</h1>
                <p class="intro">"The sun rained and the rain shined. It was a beautiful morning <br> with a bright moon and clear skies. And it was perfect for writing..."</p>
 
 
@@ -238,10 +239,22 @@
 
       <script type="text/javascript">
          $(document).ready(function () {
+            // var hom = $(getElementById('hom'));
 
-            $(".intro").delay(2000).fadeIn("ease");
+            $(".intro").delay(3000).fadeIn(3000).delay(10000).fadeOut("ease");
             event.preventDefault();
          });
+
+      </script>
+
+      <script type="text/javascript">
+      $(document).ready(function () {
+         //  var hom = $(getElementById('hom'));
+
+          $('#hom').delay(16000).fadeIn(3000);
+          event.preventDefault();
+
+      });
 
       </script>
 
