@@ -96,14 +96,16 @@ ul, .col-xs-2 .men
 {
    display: none;
    position: absolute;
-   border: 2px;
+   font-family: 'Satisfy', cursive;
+   font-weight: bold;
+   /*border: 2px;
    border-color: white;
-   border-style: solid;
+   border-style: solid;*/
    padding: 0.7em;
-   left: 45%;
-   bottom: 45%;
+   left: 40%;
+   bottom: 40%;
    color: white;
-   font-size: 200%;
+   font-size: 400%;
 }
 
 
