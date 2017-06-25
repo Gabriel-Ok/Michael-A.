@@ -24,7 +24,7 @@
 
          <!-- homepage content -->
          <!-- <div class="navbar navbar-default navbar-fixed-top" role="menubar"> -->
-            <div class="container">
+            <div class="container" id="head">
                <!-- <div class="navbar-header"> -->
 
                   <!-- menubar & menu content -->
@@ -38,7 +38,7 @@
 
                      <div class="col-xs-2">
                         <br>
-                        <span class="menuicon"><a href="#">Home</a></span>
+                        <span class="menuicon"><a href="#cntim">Home</a></span>
 
 
 
@@ -66,7 +66,7 @@
                      </div>
                      <div class="col-xs-2">
                         <br>
-                        <span class="menuicon"><a href="#">Contact</a></span>
+                        <span class="menuicon"><a href="#contact" data-toggle="modal">Contact</a></span>
 
 
 
@@ -78,7 +78,11 @@
 
 
 
+
+
                </div>
+               <p class="intro">"The sun rained and the rain shined. It was a beautiful morning <br> with a bright moon and clear skies. And it was perfect for writing..."</p>
+
 
             <!-- </div> -->
          <!-- </div> -->
@@ -87,71 +91,180 @@
 
 
 
-<div class="container-fluid">
+<div class="container-fluid" id="cntim">
+
+
+
+
    <marquee behavior="slide" direction="left" scrollamount="20px" scrolldelay="40ms">
-      <div class="col-xs-3" id="img1">
+      <div class="col-xs-9">
+
+      </div>
+      <div class="col-xs-3">
 
 
-      <div class="image">
-         <br><br><br><br><br><br><br><br><br> <br>  <br><br><br>
-         <p class="iconp">Hi I am Michael, welcome to my website</p>
+      <div class="col-xs-" id="img1">
+         <br><br><br><br><br><br><br><br><br><br> <br>
+         <div class="image">
+            <br><br><br><br><br><br><br><br><br><br><br> <br><br>
+            <p class="iconp">Hi I am Michael, welcome to my website</p>
+
+            </div>
+
+
+
+
 
          </div>
-
-
          </div>
+
 
 
       </marquee>
 
-      </div>
-
-
-
-
-
-
-
-
-
-      <a href="#" ><span class="direction">&#9661;</span></a>
-
 
       </div>
-      <div class="container-fluid">
+      <a href="#portfolio" ><span class="direction">&#9661;</span></a>
+
+
+
+
+
+
+
+
+
+
+      <!-- <a href="#" ><span class="direction">&#9661;</span></a> -->
+
+
+      </div>
+      <!-- <div class="container-fluid"> -->
          <div id="portfolio">
+
+
+<div class="col-xs-1">
+
+</div>
+
+
+
+
+      </div>
+
+
+      <div class="modal fade" data-toggle="modal" data-target="contact" role="dialog" id="contact">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h3>Contact me</h3>
+
+               </div>
+               <div class="modal-body">
+
+               </div>
+               <div class="modal-footer">
+                  <a class="btn btn-primary" data-dismiss="modal" href="#">CLOSE</a>
+
+               </div>
+
+            </div>
 
          </div>
 
-
       </div>
 
+      <!-- JS for portfolio section -->
+
+      <script type="text/javascript">
+
+
+
+         $(document).ready(function () {
+            $(window).scroll(function () {
+
+               $(".col-xs-1").each(function(i){
+                  var boo = $(this).offset().top + $(this).outerHeight();
+                  var bow = $(window).scrollTop() + $(window).height();
+
+                  if (boo > bow) {
+
+                     $(this).animate({'opacity' : '1' },1600);
+
+                  }
+
+
+               });
+
+
+
+            });
+
+         });
+
+      </script>
+
+
+      <!-- JS for smooth scrolling -->
+
+
+      <script type="text/javascript">
+
+         $(document).ready(function () {
+            $("a").on('click', function (event) {
+
+               if (this.hash !=="") {
+                  event.preventDefault();
+                  var hash= this.hash;
+                  $('html, body').animate({
+
+                     scrollTop:
+                     $(hash).offset().top
+                  },800,function () {
+
+                     window.location.hash=hash;
+
+                  });
+               }
+            });
+         });
 
 
 
 
 
+      </script>
+      <!-- JS for homepage intro paragraph -->
+
+      <script type="text/javascript">
+         $(document).ready(function () {
+
+            $(".intro").delay(2000).fadeIn("ease");
+            event.preventDefault();
+         });
+
+      </script>
 
 
+      <!-- JS for homepage image fade out -->
 
+      <script type="text/javascript">
+         $(document).ready(function () {
 
+            $("#img1").delay(12000).fadeOut("ease");
+            event.preventDefault();
+         });
 
-
-
+      </script>
 
 
 
       <script type="text/javascript">
-      $(document).ready(function () {
-
-         $("#img1").delay(15000).fadeOut("ease");
-         event.preventDefault();
-      });
 
       </script>
-      <script type="text/javascript">
 
-      </script>
+
+
       <script type="text/javascript" src="js\bootstrap.min.js">
 
       </script>
