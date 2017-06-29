@@ -427,14 +427,48 @@ hr
 {
    height: 100vh;
    width: 100%;
-   padding-top: 1px solid transparent;
-   position: absolute;
+   z-index: 1500;
+   position: relative;
+   background-color: rgba(255, 100, 55, 0.5);
+   display: none;
+   color: blue;
+
+
 }
+
 
 #blog2
 {
    height: 100vh;
    width: 100%;
-   position: absolute;
+   top: 200%;
+   z-index: 1500;
+   position: relative;
+   background-color: rgba(255, 0, 0, 0.5);
+   display: none;
    color: red;
+}
+
+#blog3
+{
+   height: 100vh;
+   width: 100%;
+   top: 200%;
+   z-index: 1500;
+   position: relative;
+   background-color: rgba(255, 0, 0, 0.5);
+   display: none;
+   color: white;
+}
+
+#blog4
+{
+   height: 100vh;
+   width: 100%;
+   top: 200%;
+   z-index: 1500;
+   position: relative;
+   background-color: rgba(255, 0, 0, 0.5);
+   display: none;
+   color: green;
 }
