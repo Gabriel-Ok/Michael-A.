@@ -33,7 +33,7 @@
 
                   <ul>
                      <div class="col-xs-2">
-                        <!-- <br> -->
+                        <br>
                         <a  href="#" class="men">&#9776;</a>
                      </div>
 
@@ -67,7 +67,7 @@
                      </div>
                      <div class="col-xs-2">
                         <br>
-                        <span class="menuicon"><a href="#contact" data-toggle="modal">Contact</a></span>
+                        <span class="menuicon"><a href="#contact" data-toggle="modal" class="contact">Contact</a></span>
 
 
 
@@ -101,9 +101,11 @@
 
 
 
+
+
       </div>
 
-         <div class="col-xs-3">
+         <div class="col-xs-3" id="cool">
             <marquee behavior="slide" direction="left" scrollamount="20px" scrolldelay="40ms">
 
 
@@ -127,7 +129,6 @@
 
 
 
-      <a href="#portfolio" ><span class="direction">&#9661;</span></a>
 
 
 
@@ -139,16 +140,95 @@
 
 
       <!-- <a href="#" ><span class="direction">&#9661;</span></a> -->
+      <a href="#portfolio" ><span class="direction">&#9661;</span></a>
+
 
 
       </div>
       <!-- <div class="container-fluid"> -->
          <div id="portfolio">
+            <!-- <div class="col-xs-1">
+
+            </div> -->
 
 
-<div class="col-xs-1">
 
-</div>
+            <div  class="container" id="port">
+
+               <hr id="hr1">
+               <hr id="hr2">
+               <div class="col-xs-3" id="over1">
+
+               <div class="overflow">
+
+
+
+               <div id="port1">
+                  <a href="#"><p class="icont">I Write</p></a>
+
+               </div>
+               </div>
+               </div>
+               <div class="col-xs-3" id="over1">
+
+
+
+
+               <div class="overflow">
+
+
+
+               <div  id="port2">
+               <a href="#">
+                  <p class="icont">And Then, I Arrived</p>
+
+               </a>
+               </div>
+               </div>
+               </div>
+               <div class="col-xs-3" id="over1">
+
+
+               <div class="overflow">
+
+
+
+               <div id="port3">
+                  <a href="#"><p class="icont">I Find It Funny</p></a>
+
+               </div>
+               </div>
+               </div>
+               <div class="col-xs-3" id="over1">
+
+
+               <div class="overflow">
+
+
+
+               <div  id="port4">
+                  <a href="#"><p class="icont">The Young, Wild And Free;<br>Wait, What? Free...?</p></a>
+
+
+                  </div>
+                  </div>
+
+
+               </div>
+               </div>
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
 
 
 
@@ -162,8 +242,10 @@
                <div class="modal-header">
                   <h3>Contact me</h3>
 
+
                </div>
                <div class="modal-body">
+
 
                </div>
                <div class="modal-footer">
@@ -177,6 +259,15 @@
 
       </div>
 
+
+      <script type="text/javascript">
+
+
+
+
+
+      </script>
+
       <!-- JS for portfolio section -->
 
       <script type="text/javascript">
@@ -185,6 +276,7 @@
 
          $(document).ready(function () {
             $(window).scroll(function () {
+
 
                $(".col-xs-1").each(function(i){
                   var boo = $(this).offset().top + $(this).outerHeight();
@@ -266,7 +358,7 @@
       <script type="text/javascript">
          $(document).ready(function () {
 
-            $("#img1").delay(12000).fadeOut("ease");
+            $("#img1").delay(12000).fadeOut(2000);
             event.preventDefault();
          });
 
