@@ -164,7 +164,7 @@
 
 
                <div id="port1">
-                  <a href="#"><p class="icont">I Write</p></a>
+                  <a href="#blog1"><p class="icont" id="link1">I Write</p></a>
 
                </div>
                </div>
@@ -179,8 +179,8 @@
 
 
                <div  id="port2">
-               <a href="#">
-                  <p class="icont">And Then, I Arrived</p>
+               <a href="#blog2">
+                  <p class="icont" id="link2">And Then, I Arrived</p>
 
                </a>
                </div>
@@ -194,7 +194,7 @@
 
 
                <div id="port3">
-                  <a href="#blog2"><p class="icont">I Find It Funny</p></a>
+                  <a href="#blog3"><p class="icont" id="link3">I Find It Funny</p></a>
 
                </div>
                </div>
@@ -207,7 +207,7 @@
 
 
                <div  id="port4">
-                  <a href="#blog1"><p class="icont">The Young, Wild And Free;<br>Wait, What? Free...?</p></a>
+                  <a href="#blog4"><p class="icont" id="link4">The Young, Wild And Free;<br>Wait, What? Free...?</p></a>
 
 
                   </div>
@@ -222,28 +222,46 @@
 
 
             </div>
+            <div class="container">
+               <div id="blog1">
+                  <a href="#" id="close1">close</a>
+                  <p class="blog" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-            <div id="blog1">
-               <p class="blog">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-            </div>
-
-            <div id="blog2">
-               <p class="blog">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+               </div>
 
             </div>
 
+            <div class="container">
+               <div id="blog2">
+                  <a href="#" id="close2">close</a>
+                  <!-- <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> -->
+                  <p class="blog">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+               </div>
+
+            </div>
+
+            <div class="container">
+               <div id="blog3">
+                  <a href="#" id="close3">close</a>
+                  <!-- <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> -->
+                  <p class="blog">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+               </div>
+
+            </div>
+
+            <div class="container">
+               <div id="blog4">
+                  <a href="#" id="close4">close</a>
+                  <!-- <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> -->
+                  <p class="blog">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+               </div>
+
+            </div>
 
 
-
-
-
-
-
-
-
-
-      </div>
 
 
       <div class="modal fade" data-toggle="modal" data-target="contact" role="dialog" id="contact">
@@ -270,15 +288,148 @@
       </div>
 
 
+
+
+      <!-- JS for portfolio section -->
+
+
+      <!-- javascript for 1st blog -->
+
+
+
       <script type="text/javascript">
+         $(document).ready(function () {
+            $('#link1').on('click', function () {
+
+               $('#blog1').fadeIn().show();
+               event.preventDefault();
+
+            });
 
 
-
-
+         });
 
       </script>
 
-      <!-- JS for portfolio section -->
+      <script type="text/javascript">
+         $(document).ready(function () {
+            $('#close1').on('click', function () {
+
+               $('#blog1').hide();
+               event.preventDefault();
+
+            });
+
+
+         });
+
+      </script>
+
+
+
+
+      <!-- javascript for 2nd blog -->
+
+
+      <script type="text/javascript">
+         $(document).ready(function () {
+            $('#link2').on('click', function () {
+
+               $('#blog2').fadeIn().show();
+               event.preventDefault();
+
+            });
+
+
+         });
+
+      </script>
+
+      <script type="text/javascript">
+         $(document).ready(function () {
+            $('#close2').on('click', function () {
+
+               $('#blog2').hide();
+               event.preventDefault();
+
+            });
+
+
+         });
+
+      </script>
+
+      <!-- javascript for 3rd blog -->
+
+      <script type="text/javascript">
+         $(document).ready(function () {
+            $('#link3').on('click', function () {
+
+               $('#blog3').fadeIn().show();
+               event.preventDefault();
+
+            });
+
+
+         });
+
+      </script>
+
+      <script type="text/javascript">
+         $(document).ready(function () {
+            $('#close3').on('click', function () {
+
+               $('#blog3').hide();
+               event.preventDefault();
+
+            });
+
+
+         });
+
+      </script>
+
+
+      <!-- javascript for 4th blog -->
+
+
+
+      <script type="text/javascript">
+         $(document).ready(function () {
+            $('#link4').on('click', function () {
+
+               $('#blog4').fadeIn().show();
+               event.preventDefault();
+
+            });
+
+
+         });
+
+      </script>
+
+
+      <script type="text/javascript">
+         $(document).ready(function () {
+            $('#close4').on('click', function () {
+
+               $('#blog4').hide();
+               event.preventDefault();
+
+            });
+
+
+         });
+
+      </script>
+
+
+
+
+
+
+
+
 
       <script type="text/javascript">
 
@@ -429,21 +580,21 @@
       <!-- JS for homepage intro paragraph -->
 
       <script type="text/javascript">
-         $(document).ready(function () {
-            // var hom = $(getElementById('hom'));
+            $(document).ready(function () {
+               // var hom = $(getElementById('hom'));
 
-            $(".intro").delay(3000).fadeIn(3000).delay(10000).fadeOut("ease");
-            event.preventDefault();
+               $(".intro").delay(3000).fadeIn(3000).delay(10000).fadeOut("ease");
+               event.preventDefault();
          });
 
       </script>
 
-      <script type="text/javascript">
-      $(document).ready(function () {
-         //  var hom = $(getElementById('hom'));
+         <script type="text/javascript">
+         $(document).ready(function () {
+            //  var hom = $(getElementById('hom'));
 
-          $('#hom').delay(16000).fadeIn(3000);
-          event.preventDefault();
+             $('#hom').delay(16000).fadeIn(3000);
+             event.preventDefault();
 
       });
 
