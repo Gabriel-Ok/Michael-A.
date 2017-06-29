@@ -194,7 +194,7 @@
 
 
                <div id="port3">
-                  <a href="#"><p class="icont">I Find It Funny</p></a>
+                  <a href="#blog2"><p class="icont">I Find It Funny</p></a>
 
                </div>
                </div>
@@ -207,7 +207,7 @@
 
 
                <div  id="port4">
-                  <a href="#"><p class="icont">The Young, Wild And Free;<br>Wait, What? Free...?</p></a>
+                  <a href="#blog1"><p class="icont">The Young, Wild And Free;<br>Wait, What? Free...?</p></a>
 
 
                   </div>
@@ -220,6 +220,16 @@
 
 
 
+
+            </div>
+
+            <div id="blog1">
+               <p class="blog">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            </div>
+
+            <div id="blog2">
+               <p class="blog">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
             </div>
 
@@ -278,7 +288,94 @@
             $(window).scroll(function () {
 
 
-               $(".col-xs-1").each(function(i){
+               $("#port1").each(function(i){
+                  var boo = $(this).offset().top + $(this).outerHeight();
+                  var bow = $(window).scrollTop() + $(window).height();
+
+                  if (boo > bow) {
+
+                     $(this).animate({'opacity' : '1' },1600);
+
+                  }
+
+
+               });
+
+
+
+            });
+
+         });
+
+      </script>
+
+      <script type="text/javascript">
+
+
+
+         $(document).ready(function () {
+            $(window).scroll(function () {
+
+
+               $("#port2").each(function(i){
+                  var boo = $(this).offset().top + $(this).outerHeight();
+                  var bow = $(window).scrollTop() + $(window).height();
+
+                  if (boo > bow) {
+
+                     $(this).animate({'opacity' : '1' },1600);
+
+                  }
+
+
+               });
+
+
+
+            });
+
+         });
+
+      </script>
+
+      <script type="text/javascript">
+
+
+
+         $(document).ready(function () {
+            $(window).scroll(function () {
+
+
+               $("#port3").each(function(i){
+                  var boo = $(this).offset().top + $(this).outerHeight();
+                  var bow = $(window).scrollTop() + $(window).height();
+
+                  if (boo > bow) {
+
+                     $(this).animate({'opacity' : '1' },1600);
+
+                  }
+
+
+               });
+
+
+
+            });
+
+         });
+
+      </script>
+
+      <script type="text/javascript">
+
+
+
+         $(document).ready(function () {
+            $(window).scroll(function () {
+
+
+               $("#port4").each(function(i){
                   var boo = $(this).offset().top + $(this).outerHeight();
                   var bow = $(window).scrollTop() + $(window).height();
 
