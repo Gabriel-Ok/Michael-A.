@@ -276,6 +276,8 @@ ul
    padding: 5px;
    transition: all 0.4s ease 0s;
    position: relative;
+   opacity: 0.4;
+
 }
 #port2
 {
@@ -288,6 +290,7 @@ ul
    /*float: right;
    left: -10%;
    top: 35%;*/
+   opacity: 0.4;
    border: 2px;
    margin: 3px;
    padding: 5px;
@@ -307,6 +310,7 @@ ul
    /*float: right;
    left: -10%;
    top: 35%;*/
+   opacity: 0.4;
    border: 2px;
    margin: 3px;
    padding: 5px;
@@ -327,6 +331,7 @@ ul
    /*left: -10%;*/
    /*top: 35%;*/
    /*border: 2px solid transparent;*/
+   opacity: 0.4;
    margin: 3px;
    padding: 5px;
    position: relative;
@@ -345,6 +350,7 @@ ul
    top: 35%;
    overflow: hidden;
    border: 2px solid transparent;
+   /*display: none;*/
 
 
    /*position: absolute;*/
@@ -417,7 +423,18 @@ hr
 
 }
 
-/*.overflow:hover
+#blog1
 {
+   height: 100vh;
+   width: 100%;
+   padding-top: 1px solid transparent;
+   position: absolute;
+}
 
-}*/
+#blog2
+{
+   height: 100vh;
+   width: 100%;
+   position: absolute;
+   color: red;
+}
