@@ -468,7 +468,8 @@ hr
    top: 200%;
    z-index: 1500;
    position: relative;
-   background-color: rgba(255, 0, 0, 0.5);
+   /*background-color: rgba(255, 0, 0, 0.5);*/
+   background: linear-gradient(90deg,white,white,70%,blue);
    display: none;
    color: green;
 }
