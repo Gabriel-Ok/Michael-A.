@@ -124,7 +124,7 @@
          <div class="col-xs-" id="img1">
             <br><br><br><br><br><br><br><br><br><br> <br>
             <div class="image">
-               <br><br><br><br><br><br><br><br><br><br><br> <br><br>
+
                <p class="iconp">Hi I am Michael, welcome to my website</p>
 
                </div>
@@ -150,17 +150,15 @@
 
 
 
-      <!-- <a href="#" ><span class="direction">&#9661;</span></a> -->
       <a href="#portfolio" ><span class="direction">&#9661;</span></a>
 
 
 
       </div>
-      <!-- <div class="container-fluid"> -->
-         <div id="portfolio">
-            <!-- <div class="col-xs-1">
 
-            </div> -->
+
+         <div id="portfolio">
+
 
 
 
@@ -286,6 +284,8 @@
 
 <!-- ============================================================================================================================================================================================================================================================================ -->
 
+
+        <!-- bootstrap for contact -->
 
       <div class="modal fade" data-toggle="modal" data-target="contact" role="dialog" id="contact">
          <div class="modal-dialog">
@@ -570,6 +570,66 @@
 
       </script>
 
+      <script type="text/javascript">
+
+                  // ======================================================================
+                                 // alternative if window is not scrolled
+
+
+                  //  var load = $(document).ready(function () {
+                  //                   $(window).ready(function () {
+                   //
+                  //                      $('#port4').fadeIn(1600);
+                  //                      event.preventDefault();
+                   //
+                  //                   });
+                   //
+                  //                });
+
+            // ==================================================================================
+
+
+
+
+
+
+         $(document).ready(function () {
+            $(window).scroll(function () {
+
+
+               $("#port4").each(function(i){
+                  var boo = $(this).offset().top + $(this).outerHeight();
+                  var bow = $(window).scrollTop() + $(window).height();
+
+                  if (boo > bow) {
+
+                     $(this).animate({'opacity' : '1' },1600);
+
+                  }
+
+
+               });
+
+                  // ======================================================================
+                                 // alternative if window is not scrolled
+
+                                 // if ($(window).ready() !== $(window).offset() ) {
+                                 //
+                                 //    return(load());
+                                 //
+                                 // }
+                  // =========================================================================
+
+
+               });
+
+            });
+
+      </script>
+      <script type="text/javascript">
+
+      </script>
+
 
       <!-- JS for smooth scrolling -->
 
@@ -634,14 +694,6 @@
          });
 
       </script>
-
-
-
-      <script type="text/javascript">
-
-      </script>
-
-
 
       <script type="text/javascript" src="js\bootstrap.min.js">
 
