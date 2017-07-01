@@ -58,11 +58,16 @@ ul, .col-xs-2 .men
    border: 2px;
    border-style: solid;
    border-color: grey;
-   padding: 0.7em;
-   position: absolute;
+   /*padding: 0.7em;*/
+   /*position: fixed;*/
    /*border-radius: 45%;*/
 
 
+}
+
+.navbar
+{
+   background-color: rgba(0, 0, 0, 0);
 }
 
 #cool
