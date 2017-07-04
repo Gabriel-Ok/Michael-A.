@@ -565,3 +565,53 @@ hr
 {
    background: linear-gradient(45deg,#4dff4d,#33ff33,70%,#4dffb8);
 }
+#close1
+{
+font-size: 100%;
+font-weight: bold;
+color: black;
+border: 1px, black;
+}
+
+#close2
+{
+font-size: 100%;
+font-weight: bold;
+color: black;
+}
+
+#close3
+{
+font-size: 100%;
+font-weight: bold;
+color: black;
+}
+
+#close4
+{
+font-size: 100%;
+font-weight: bold;
+color: black;
+}
+.ad2
+{
+   margin-left: 30px;
+}
+.ad1
+{
+   color: black;
+   margin-left: 30px;
+
+}
+.ad1:hover
+{
+   color: white;
+   text-decoration: none;
+
+}
+.ic
+{
+   width: 20px;
+   height: 20px;
+   margin-right: 13px;
+}
