@@ -4,6 +4,39 @@ body
  overflow-x: hidden;
  overflow-y: hidden;
 }
+
+#loader-wrapper
+{
+   height: 100vh;
+   width: 100%;
+   background: linear-gradient(45deg,#4dff4d,#33ff33,70%,#4dffb8);
+
+   z-index: 6000;
+   position: fixed;
+}
+#loader
+{
+   /*display: block;*/
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   font-size: 450%;
+   color: white;
+
+   width: 150px;
+   height: 150px;
+   margin: -75px 0 0 -75px;
+
+
+   animation: pulse 2s infinite linear;
+}
+
+@keyframes pulse {
+    0%{opacity: 1;}
+    50%{opacity: 0.1;}
+    100%{opacity: 1;}
+}
+
 #contact
 {
    /*width: 60%;*/
@@ -614,4 +647,21 @@ color: black;
    width: 20px;
    height: 20px;
    margin-right: 13px;
+}
+#theblog
+{
+   font-size: 120%;
+}
+.bloglink
+{
+   /*font-size: 50%;*/
+}
+.bloglink:hover
+{
+   text-decoration: none;
+}
+
+#b1p1
+{
+   text-align: justify;
 }
