@@ -24,6 +24,7 @@ body
    font-size: 450%;
    color: white;
 
+
    width: 150px;
    height: 150px;
    margin: -75px 0 0 -75px;
@@ -76,6 +77,7 @@ ul, .col-xs-2 .men
 
 ul, .col-xs-2 a
 {
+   /*font-family: 'Lobster Two', cursive;*/
 
 
    text-decoration: none;
@@ -140,9 +142,9 @@ ul, .col-xs-2 .men
 {
    display: none;
    position: absolute;
-   font-family: 'Satisfy', cursive;
    font-weight: bold;
    text-align: center;
+   font-family: 'Lobster Two', cursive;
    margin: 0 auto;
      left: 0;
    right: 0;
@@ -183,6 +185,7 @@ ul, .col-xs-2 .men
    font-size: 150%;
    position: absolute;
    text-align: center;
+   font-family: 'Lobster Two', cursive;
    margin: 0 auto;
      left: 0;
    right: 0;
@@ -396,6 +399,7 @@ ul
    position: relative;
    font-weight: bold;
    font-style: italic;
+   font-family: 'Lobster Two', cursive;
    color: black;
    left: 0;
 }
@@ -517,6 +521,27 @@ hr
    transform: scale(1.1);
 
 }
+#link1
+{
+   font-family: 'Lobster Two', cursive;
+
+}
+#link2
+{
+   font-family: 'Lobster Two', cursive;
+
+}
+#link3
+{
+   font-family: 'Lobster Two', cursive;
+
+}
+#link4
+{
+   font-family: 'Lobster Two', cursive;
+
+}
+
 
 #blog1
 {
@@ -576,21 +601,29 @@ hr
 }
 #blog4p1
 {
+   font-family: 'Lobster Two', cursive;
+
    background-color: rgba(0, 0, 0, 0.5);
    color: white;
 }
 #blog3p1
 {
+   font-family: 'Lobster Two', cursive;
+
    background-color: rgba(0, 0, 0, 0.5);
    color: white;
 }
 #blog2p1
 {
+   font-family: 'Lobster Two', cursive;
+
    background-color: rgba(0, 0, 0, 0.5);
    color: white;
 }
 #blog1p1
 {
+   font-family: 'Lobster Two', cursive;
+
    background-color: rgba(0, 0, 0, 0.5);
    color: white;
 
