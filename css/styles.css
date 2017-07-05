@@ -470,7 +470,7 @@ hr
 .icont
 {
    color: white;
-   position: relative;
+   /*position: relative;*/
    /*bottom: 50%;*/
    font-size: 100%;
    left: 7%;
@@ -524,23 +524,20 @@ hr
 #link1
 {
    font-family: 'Lobster Two', cursive;
-      position: relative;
-
 }
 #link2
 {
    font-family: 'Lobster Two', cursive;
-   position: relative;
+
 }
 #link3
 {
    font-family: 'Lobster Two', cursive;
-   position: relative;
+
 }
 #link4
 {
    font-family: 'Lobster Two', cursive;
-   position: relative;
 }
 
 
