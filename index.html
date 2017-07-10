@@ -565,19 +565,19 @@ As they say, will you be "the real MVP"?
 
 
 
-            window.addEventListener('load', function () {
+               window.addEventListener('load', function () {
 
 
-               loader.style.display = 'none';
-            // event.preventDefault();
-         });
-
-
-
+                  loader.style.display = 'none';
+               // event.preventDefault();
+            });
 
 
 
-</script>
+
+
+
+         </script>
 
 
 
@@ -863,38 +863,38 @@ As they say, will you be "the real MVP"?
 
 
          $(document).ready(function () {
-            $(window).scroll(function () {
+               $(window).scroll(function () {
 
 
-               $("#port4").each(function(i){
-                  var boo = $(this).offset().top + $(this).outerHeight();
-                  var bow = $(window).scrollTop() + $(window).height();
+                  $("#port4").each(function(i){
+                     var boo = $(this).offset().top + $(this).outerHeight();
+                     var bow = $(window).scrollTop() + $(window).height();
 
-                  if (boo > bow) {
+                     if (boo > bow) {
 
-                     $(this).animate({'opacity' : '1' },1600);
+                        $(this).animate({'opacity' : '1' },1600);
 
-                  }
+                     }
 
+
+                  });
+
+                     // ======================================================================
+                                    // alternative if window is not scrolled
+
+                                    // if ($(window).ready() !== $(window).offset() ) {
+                                    //
+                                    //    return(load());
+                                    //
+                                    // }
+                     // =========================================================================
+
+
+                  });
 
                });
 
-                  // ======================================================================
-                                 // alternative if window is not scrolled
-
-                                 // if ($(window).ready() !== $(window).offset() ) {
-                                 //
-                                 //    return(load());
-                                 //
-                                 // }
-                  // =========================================================================
-
-
-               });
-
-            });
-
-      </script>
+            </script>
 
 
       <!-- JS for smooth scrolling -->
@@ -947,7 +947,7 @@ As they say, will you be "the real MVP"?
 
                });
 
-      </script>
+         </script>
 
 
       <!-- JS for homepage image fade out -->

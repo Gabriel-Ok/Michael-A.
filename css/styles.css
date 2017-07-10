@@ -548,6 +548,9 @@ hr
    z-index: 1500;
    position: relative;
    background-color: rgba(255, 100, 55, 0.5);
+   background-image: url("../images/pexels-photo-110186.jpeg");
+   background-size: cover;
+   background-repeat: no-repeat;
    display: none;
    overflow-x: auto;
    color: blue;
@@ -564,6 +567,9 @@ hr
    z-index: 1500;
    position: relative;
    background-color: rgba(255, 0, 0, 0.5);
+   background-image: url("../images/pexels-photo-28480.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
    display: none;
    overflow-x: auto;
 
@@ -579,6 +585,9 @@ hr
    z-index: 1500;
    position: relative;
    background-color: rgba(255, 0, 0, 0.5);
+   background-image: url("../images/pexels-photo-373511.jpeg");
+   background-size: cover;
+   background-repeat: no-repeat;
    display: none;
    color: white;
    overflow-x: auto;
@@ -592,6 +601,9 @@ hr
    /*top: 200%;*/
    z-index: 1500;
    position: relative;
+   background-image: url("../images/pexels-photo-268660.jpeg");
+   background-size: cover;
+   background-repeat: no-repeat;
    display: none;
    overflow-x: auto;
 
